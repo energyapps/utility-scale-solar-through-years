@@ -10,7 +10,9 @@ If you're working with [Foundation](http://foundation.zurb.com/) responsive fram
 
 ## Setup
 
-- Clone the repo:
+- Before Getting started, ask Dan to create a new repo in the [EnergyApps Github group](https://github.com/energyapps) and give you editing permissions. Or alternatively, you can create this repo on your own account.
+
+- In your local directory Clone the App Frame repo:
 
 `git clone https://github.com/energyapps/app_frame.git`
 
@@ -18,7 +20,6 @@ If you're working with [Foundation](http://foundation.zurb.com/) responsive fram
 
 `mv app_frame/ new_directory_name/`
 
-- On the [EnergyApps Github group](https://github.com/energyapps) create and name a new project repo.
 - cd into that folder in terminal and change remote URL to new repo:
 
 `git remote -v` List all remote urls
