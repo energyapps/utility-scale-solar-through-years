@@ -36,6 +36,8 @@ If you're working with [Foundation](http://foundation.zurb.com/) responsive fram
 `git checkout gh-pages`
 `git push origin gh-pages`
 
+- At this point you may want to go into your repo on github and change the "default branch" to gh-pages in the settings.
+
 - Begin work in the `index.html` file.
 - Build the Jekyll `_site/` folder by running `jekyll build` in your directory. I recommend running `jekyll build --watch`, which automatically rebuilds your `_site` folder whenever you change something in the directory.
 - Run the jekyll server by running `jekyll serve`. You can now see your page at [](http://localhost:4000/)
