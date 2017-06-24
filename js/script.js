@@ -1,5 +1,7 @@
 // Insert your scripts here
 
+var pymChild = new pym.Child();
+
 // Initial Script
 
 		var map = L.map('map', {
