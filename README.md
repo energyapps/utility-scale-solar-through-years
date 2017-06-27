@@ -22,8 +22,6 @@ If you're working with [Foundation](http://foundation.zurb.com/) responsive fram
 
 - cd into that folder in terminal and change remote URL to new repo:
 
-`git remote -v` List all remote urls
-
 `git remote set-url origin https://github.com/energyapps/NEW-REPO-NAME.git` -changes the remote url to your new URL
 
 - Push to this new repo
@@ -85,5 +83,3 @@ If you're working with [Foundation](http://foundation.zurb.com/) responsive fram
 ## Notes
 
 Public Domain
-
-### Updated: 2/23/15

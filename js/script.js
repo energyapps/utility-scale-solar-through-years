@@ -1,5 +1,5 @@
-// Insert your scripts here
 
+// initates pym!
 var pymChild = new pym.Child();
 
 // Initial Script
