@@ -2,9 +2,11 @@
 
 This is a codebase that will allow energy.gov users to quickly get started developing new graphics and maps. By cloning this repo, you can immediately begin coding. 
 
+The contents of this page are in the Public Domain
+
 ## Dependencies
 - Git (obviously)
-- Download and install [Jekyll](http://jekyllrb.com/).[Jekyll Documentation](https://jekyllrb.com/docs/home/) and specific documentation about Jekyll and [Github Pages](https://jekyllrb.com/docs/github-pages/).
+- Download and install [Jekyll](http://jekyllrb.com/). [Jekyll Documentation](https://jekyllrb.com/docs/home/) and specific documentation about [Jekyll and Github Pages](https://jekyllrb.com/docs/github-pages/).
 - [Pym.js](http://blog.apps.npr.org/pym.js/) is used for making fully responsive iframes. 
 - [Foundation CSS](http://foundation.zurb.com/sites.html) is often used but not required. 
 
@@ -36,13 +38,29 @@ This is a codebase that will allow energy.gov users to quickly get started devel
 `git checkout gh-pages`
 `git push origin gh-pages`
 
-- At this point you may want to go into your repo on github and change the "default branch" to gh-pages in the settings. The gh-pages repo is like the "production server". Whatever is in this repo is what is served over "https://energyapps.github.io/NEW-REPO-NAME".
+- At this point you may want to go into your repo on github and change the "default branch" to gh-pages in the settings. The gh-pages repo is like the "production server". Whatever is in this repo is what is served over `https://energyapps.github.io/NEW-REPO-NAME`.
 
-- Build the Jekyll `_site/` folder by running `jekyll build` in your directory. I recommend running `jekyll build --watch`, which automatically rebuilds your `_site` folder whenever you change something in the repository.
-- Run the jekyll server by running `jekyll serve`. You can now see your page at [](http://localhost:4000/)
-- Begin work in the `index.html` file.
-- Push changes to github, see website running remotely at energyapps.github.io/NEW-REPO-NAME/index.html
-- Recommended: Update Readme to reflect your current project.
+## Building your graphic
+
+- Build the Jekyll `_site/` folder by running `jekyll build` in your directory. I recommend running `jekyll build --watch`, which automatically rebuilds your `_site` folder whenever you change something in the repository. More on this [on jekyll's website](https://jekyllrb.com/docs/usage/)
+- Run the jekyll server by running `jekyll serve`. You can now see your page at http://localhost:4000/
+- Begin work in the `index.html` file, `style.css` file, and `script.js` file. Edit libraries in `_layout/default.html`.
+- Push changes to github, see website running remotely at `https://energyapps.github.io/NEW-REPO-NAME/`. The site is now deployed on energyapps.github.io
+- Recommended: Update README.md to reflect your current project.
+
+## Deploying your graphic on energy.gov
+
+- Log into the cms. Click on `Add Content` and then `Map` and select a group. 
+- Add Title.
+- Make sure "Hide Map Title" and "CSS Scaling" are **NOT** clicked.
+- Ignore "Map Library" field. This is an artifact. 
+- Make sure that the "Map Type" is set to "Raw Embed"
+- Following the directions/explanations laid out below in the Contents section, paste in the contents of _pym_files/ files. 
+	- Ensure that a fallback image has been added to "markup.html"
+	- Ensure that you have updated the URL on "cms.js"
+- **Important** add a thumbnail image to the CMS
+- Add any remaining tags and fields you may want. 
+- Click Save and see the graphic on resulting page. 
 
 ## Contents
 
@@ -55,6 +73,8 @@ To get an in-depth look at the directory structure of a general [jekyll site go 
 		- Contains the markup that you are creating. Will be merged into _layouts/default.html
 	* _config.yml
 		- Contains meta data for jekyll. Read more detailed info [here](https://jekyllrb.com/docs/configuration/).
+	* .gitignore 
+		- Contains any files, folders, or file types that you may want git to ignore when it is looking for files to add, commit, and push. By default, we exclude some mac files, and the _site/ folder.
 3.	_layout/
 	* The _layouts/ folder is the Jekyll folder that contains layouts for any type of page within a jekyll site. 
 	* default.html
