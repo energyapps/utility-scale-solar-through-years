@@ -5,10 +5,11 @@ This is a codebase that will allow energy.gov users to quickly get started devel
 The contents of this page are in the Public Domain
 
 ## Dependencies
-- Git (obviously)
+- Git (_[tutorial](https://try.github.io/)_)	
 - Download and install [Jekyll](http://jekyllrb.com/). [Jekyll Documentation](https://jekyllrb.com/docs/home/) and specific documentation about [Jekyll and Github Pages](https://jekyllrb.com/docs/github-pages/).
 - [Pym.js](http://blog.apps.npr.org/pym.js/) is used for making fully responsive iframes. 
 - [Foundation CSS](http://foundation.zurb.com/sites.html) is often used but not required. 
+- Note: If it's your first time running this stuff, you may need admin access.
 
 ## Setup
 
@@ -42,7 +43,7 @@ The contents of this page are in the Public Domain
 
 ## Building your graphic
 
-- Build the Jekyll `_site/` folder by running `jekyll build` in your directory. I recommend running `jekyll build --watch`, which automatically rebuilds your `_site` folder whenever you change something in the repository. More on this [on jekyll's website](https://jekyllrb.com/docs/usage/)
+- Build the Jekyll `_site/` folder by running `jekyll build` in your directory. I recommend running `jekyll build --watch`, which automatically rebuilds your `_site` folder whenever you change something in the repository. More on this [on jekyll's website](https://jekyllrb.com/docs/usage/).
 - Run the jekyll server by running `jekyll serve`. You can now see your page at http://localhost:4000/
 - Begin work in the `index.html` file, `style.css` file, and `script.js` file. Edit libraries in `_layout/default.html`.
 - Push changes to github, see website running remotely at `https://energyapps.github.io/NEW-REPO-NAME/`. The site is now deployed on energyapps.github.io
@@ -58,7 +59,7 @@ The contents of this page are in the Public Domain
 - Following the directions/explanations laid out below in the Contents section, paste in the contents of _pym_files/ files. 
 	- Ensure that a fallback image has been added to "markup.html"
 	- Ensure that you have updated the URL on "cms.js"
-- **Important** add a thumbnail image to the CMS
+- **Important** add a thumbnail image to the CMS.
 - Add any remaining tags and fields you may want. 
 - Click Save and see the graphic on resulting page. 
 - After recieving the green light, publish this page. 
@@ -120,3 +121,4 @@ To get an in-depth look at the directory structure of a general [jekyll site go 
 - used to use Foundation CSS a lot (link to that app frame)
 - needs, update the styles to be current with the new css. 
 - Crowbar for D3
+- http://meethyde.com/ could be useful in the future for something. 
