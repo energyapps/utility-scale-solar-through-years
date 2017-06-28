@@ -116,6 +116,7 @@ To get an in-depth look at the directory structure of a general [jekyll site go 
 	* pym.min.js is a copy of the pym library.
 	
 ## Notes
-	- used to use Foundation CSS a lot (link to that app frame)
-	- needs, update the styles to be current with the new css. 
-	- Crowbar for D3
+
+- used to use Foundation CSS a lot (link to that app frame)
+- needs, update the styles to be current with the new css. 
+- Crowbar for D3
