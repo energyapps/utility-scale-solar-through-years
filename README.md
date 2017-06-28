@@ -61,6 +61,8 @@ The contents of this page are in the Public Domain
 - **Important** add a thumbnail image to the CMS
 - Add any remaining tags and fields you may want. 
 - Click Save and see the graphic on resulting page. 
+- After recieving the green light, publish this page. 
+- Find the map name in an article you are building and select it with the "map reference" option.
 
 ## Contents
 
@@ -99,7 +101,9 @@ To get an in-depth look at the directory structure of a general [jekyll site go 
 	* **This folder contains the files that you will add to the maps section of the CMS**
 	* Refer to [pym's documentation](blog.apps.npr.org/pym.js/) to fully understand how it works.
 	* markup.html
-		- This file contains the html that you will paste into the CMS "markup" section. It contains the html that will allow for fallback image to display when the graphic is reached from Internet Explorer. In order to make sure this works, add a fallback image to the CMS and put its link in the "<img>" there. - The div with id of "graphic" is where pym operates on. 
+		- This file contains the html that you will paste into the CMS "markup" section. 
+		- Contains the html that will allow for fallback image to display when the graphic is reached from Internet Explorer. In order to make sure this works, add a fallback image to the CMS and put its link in the "<img>" there. 
+		- The div with id of "graphic" is where pym operates on. 
 	* cms.js 
 		- Javascript required to make pym work. Contains pym library and the pym initiator. 
 		- **IMPORTANT**: Remember to edit the following line to contain the URL to this project's github pages URL. `var pymParent = new pym.Parent('graphic', 'https://energyapps.github.io/NEW-REPO-NAME/', {});`
@@ -110,17 +114,8 @@ To get an in-depth look at the directory structure of a general [jekyll site go 
 	* child.html
 		- For reference, contains the minimal html/js needed on the child page in order for the above parent page to work. This is embedded within "default.html" and "script.js" so there is no need to add it anywhere.
 	* pym.min.js is a copy of the pym library.
-
-## Ideal Work flow
-
-	* You will create your content in index.html, script.js, and style.css.
-	* These files will then be merged into the default.html using Jekyll pages.
-	* When you create your "map" on cms.doe.gov, simply use pym to reference the url path of your live github pages graphic. 
-		- See the above folder titled "pym_files/" to understand how to use pym on your CMS page.
 	
 ## Notes
 	- used to use Foundation CSS a lot (link to that app frame)
 	- needs, update the styles to be current with the new css. 
 	- Crowbar for D3
-
-Public Domain
