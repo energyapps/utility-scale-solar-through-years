@@ -31,7 +31,7 @@ The typical workflow requires access to the CMS and github, and an understanding
 	- **If we are building a lot of html and CSS on the page, we have often used Foundation CSS to help bootstrap the process and create a responsive grid**
 	- [Foundation CSS](http://foundation.zurb.com/sites.html) is often used but not required. 
 
-** For more detailed information, go to the [App Frame README file](https://github.com/energyapps/app_frame/blob/master/README.md). **
+**For more detailed information, go to the [App Frame README file](https://github.com/energyapps/app_frame/blob/master/README.md).**
 
 ### Other stuff
 * Quizzes
