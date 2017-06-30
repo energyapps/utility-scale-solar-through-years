@@ -118,7 +118,7 @@ To get an in-depth look at the directory structure of a general [jekyll site go 
 	
 ## Notes
 
-- used to use Foundation CSS a lot (link to that app frame)
+- used to use Foundation CSS a lot, so you may want to understand how that works. 
 - needs, update the styles to be current with the new css. 
 - Crowbar for D3
 - http://meethyde.com/ could be useful in the future for something. 
