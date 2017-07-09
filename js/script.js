@@ -1199,11 +1199,11 @@ function buildMap() {
 //can set iconic = to something here.
 
     if (raw[i].properties.OPERATING_YEAR === cur_year) {
-        iconic = '/sites/prod/files/point.png'
-    } else if (raw[i].properties.OPERATING_YEAR >= 2010 ) {iconic = '/sites/prod/files/recent.png'}
-      else if (raw[i].properties.OPERATING_YEAR >= 2000 ) {iconic = '/sites/prod/files/00s.png'}
-      else if (raw[i].properties.OPERATING_YEAR >= 1990 ) {iconic = '/sites/prod/files/90s.png'}
-      else if (raw[i].properties.OPERATING_YEAR >= 1970 ) {iconic = '/sites/prod/files/80s.png'}
+        iconic = 'https://energy.gov/sites/prod/files/point.png'
+    } else if (raw[i].properties.OPERATING_YEAR >= 2010 ) {iconic = 'https://energy.gov/sites/prod/files/recent.png'}
+      else if (raw[i].properties.OPERATING_YEAR >= 2000 ) {iconic = 'https://energy.gov/sites/prod/files/00s.png'}
+      else if (raw[i].properties.OPERATING_YEAR >= 1990 ) {iconic = 'https://energy.gov/sites/prod/files/90s.png'}
+      else if (raw[i].properties.OPERATING_YEAR >= 1970 ) {iconic = 'https://energy.gov/sites/prod/files/80s.png'}
 
 
       // Create custom popup content
